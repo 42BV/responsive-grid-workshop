@@ -1,0 +1,11 @@
+// package.json
+{
+  "name"         : "Grid workshop",
+  "version"      : "1.0",
+  "description"  : "Bronbestanden voor de grid workshop.",
+  "main"         : "server.js",
+  "author"       : "Jarno van Rhijn",
+  "dependencies" : {
+    "express"    : "~4.6.1"
+  }
+}

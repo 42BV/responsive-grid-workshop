@@ -1,19 +1,21 @@
 ## Requirements
 
-- NodeJS
-- ExpressJS
+- npm
+- Node
+- Bower
+- Grunt
 
 
 ## Installation
 
-To link expressJS to the project, in the terminal run the following command from the project folder:
+After cloning the project, execute the following command in your terminal:
 ```
-$ npm link express
-```
-
-After express has been linked, run the following from the root of the project:
-```
-$ node server.js
+$ npm install
 ```
 
-http://localhost:8080 to run the website.
+After everything is installed, run the following from the app folder of the project:
+```
+$ grunt serve
+```
+
+http://localhost:9000 will start automaticly in your browser.

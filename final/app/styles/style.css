@@ -1,6 +1,6 @@
 @import url(../bootstrap/bootstrap.min.css);
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
- html, body {
+html, body {
     color: #A898A1;
     font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -98,7 +98,6 @@ h1, h2, h3, h4, h5, h6 {
 .wines {
     margin-top: 50px;
 }
-
 .wines aside > .well > h2 {
     margin-top: 0;
 }
@@ -133,9 +132,8 @@ footer .list-unstyled li {
     font-size: 100%;
     padding: 0;
 }
-@media(max-width:767px){
-
-    .what-we-do section:first-of-type.row img {
+@media(max-width:767px) {
+    .what-we-do section: first-of-type.row img {
         width: 35px;
         height: 35px;
         float: left;
@@ -148,15 +146,15 @@ footer .list-unstyled li {
         text-align: center;
     }
     .what-we-do section.row {
-        margin: 20px 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .what-we-do section:not(:first-of-type).row h2 {
         font-size: 25px;
         margin-top: 0;
+    }
 }
-}
-@media(min-width:768px){
-
+@media(min-width:768px) {
     .jumbotron {
         padding-top: 150px;
     }
@@ -164,27 +162,27 @@ footer .list-unstyled li {
         font-size: 50px;
     }
     .what-we-do section.row {
-        margin: 20px 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .what-we-do section:not(:first-of-type).row h2 {
         font-size: 25px;
         margin-top: 40px;
     }
 }
-@media(min-width:992px){
-
-    .what-we-do section:not(:first-of-type).row .lead {
-        font-size:21px;
+@media(min-width:992px) {
+    .what-we-do section: not(: first-of-type).row .lead {
+        font-size: 21px;
     }
 }
-@media(min-width:1200px){
-
+@media(min-width:1200px) {
     .what-we-do section.row {
-        margin:80px 0;
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
     .what-we-do section:not(:first-of-type).row h2 {
-        font-size:40px;
-        margin-top:80px;
+        font-size: 40px;
+        margin-top: 80px;
     }
 }
 /* [class*=col-] {

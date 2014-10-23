@@ -1,0 +1,27 @@
+[class^=col-] {
+  background: #f2f2f2;
+  padding: 75px 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 1s ease-in-out;
+}
+[class^=col-]:nth-of-type(1) {
+  background: green;
+}
+[class^=col-]:nth-of-type(2) {
+  background: blue;
+}
+[class^=col-]:nth-of-type(3) {
+  background: red;
+}
+[class^=col-]:nth-of-type(4) {
+  background: yellow;
+  color: black;
+}
+
+.row:first-of-type {
+  margin-bottom:20px;
+}

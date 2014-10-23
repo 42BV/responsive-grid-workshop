@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link data-require="bootstrap@*" data-semver="3.2.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css" />
+  <script data-require="bootstrap@*" data-semver="3.2.0" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Verbergen viewport < 768px</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-xs-12">
+        Altijd zichtbaar
+      </div>
+      <div class="col-sm-8 hidden-xs">
+        NIET Zichtbaar op mobile
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Tonen viewport < 768px</h1>
+      </div>
+      <div class="col-xs-4 col-sm-12">
+        Altijd zichtbaar
+      </div>
+      <div class="col-xs-8 visible-xs">
+        Alleen zichtbaar op mobile
+      </div>
+    </div>
+  </div>
+
+</html>

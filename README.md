@@ -72,7 +72,6 @@ Maak afbeeldingen responsive doormiddel van de ```img-responsive``` class.
 ###Opdracht 5: 
 Nest waar nodig rows en columns
 
-[voorbeeld](http://plnkr.co/edit/BG1owEQajGeTnbtBd1ji?p=preview)
 ```
 <element class="container">
     <div class="row">
@@ -84,12 +83,13 @@ Nest waar nodig rows en columns
     </div>
 </element>
 ```
-[voorbeeld](http://plnkr.co/edit/BG1owEQajGeTnbtBd1ji)
+
+[voorbeeld](http://plnkr.co/edit/BG1owEQajGeTnbtBd1ji?p=preview)
 ###Opdracht 6: 
 Maak tables responsive met behulp van de `table-responsive` class. Vergeet niet de class om de table te zetten en niet op de table
 
 [voorbeeld](http://plnkr.co/edit/ztsWzOKSF4GI6jYukcTw?p=preview)
- 
+
 ##Blok 3
 Goed, we zijn zover dat het grid systeem is ingebouwd in de website. Zoals inmiddels bekend zal zijn, is de website nog niet geheel responsive. Er missen nog een aantal sleutelelementen die het geheel compleet zullen maken.
 Denk hierbij aan afbeeldingen die groter zijn dan nodig op een smartphone of bepaalde onderdelen die ergens anders moeten staan.

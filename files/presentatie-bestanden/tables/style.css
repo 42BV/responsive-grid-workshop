@@ -1,5 +1,5 @@
-/* Styles go here */
-
-[class^=col-] {
-  border: 1px solid #ccc;
+@media(max-width: 768px) {
+  .hidden-nth table > tbody > tr > td:nth-of-type(2), .table-responsive table > thead > tr > th:nth-of-type(2) {
+    display: none;
+  }
 }

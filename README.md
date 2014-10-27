@@ -1,25 +1,19 @@
-## Requirements
+##Requirements
 
 - npm
 - Node
 - Bower
 - Grunt
 
+##Installation
 
-## Installation
+Na het klonen van het project, voer de volgende lijnen in je terminal uit:
+```$ npm install ``` (sudo kan nodig zijn)
 
-After cloning the project, execute the following command in your terminal:
-```
-$ npm install
-```
-
-After everything is installed, run the following from the app folder of the project:
-```
-$ grunt serve
-```
+Nadat alles is geinstalleerd voer het volgende uit:
+``` $ bower install ``` & ```$ grunt serve```
 
 http://localhost:9000 will start automaticly in your browser.
-
 
 ##Blok 3
 Goed, we zijn zover dat het grid systeem is ingebouwd in de website. Zoals inmiddels bekend zal zijn, is de website nog niet geheel responsive. Er missen nog een aantal sleutelelementen die het geheel compleet zullen maken.

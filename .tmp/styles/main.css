@@ -1,5 +1,4 @@
-@import url(../bootstrap/bootstrap.min.css);
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 html, body {
     color: #A898A1;
     font: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -13,12 +12,21 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
     color: #530F32;
 }
+.sponsors {
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+.sponsors h1 {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
 .btn {
     border: 0;
     font-weight: 700;
     border-radius: 25px;
     color: #fff;
-    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
     text-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0;
 }
 .btn:active:focus, .btn.active:focus, .btn:focus, .btn:active {
@@ -76,13 +84,14 @@ h1, h2, h3, h4, h5, h6 {
     top: -60px;
     padding-top: 80px;
     z-index: -999;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-extra-small.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-extra-small.jpg');
 }
 .jumbotron h1 {
     font-size: 30px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .jumbotron::after {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-extra-small.jpg') no-repeat center center;
     opacity: 0.9;
     content: "";
     top: 0;
@@ -91,6 +100,8 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     position: absolute;
     z-index: -999;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .what-we-do section:not(:first-of-type).row .lead {
     font-size: 16px;
@@ -107,7 +118,7 @@ input[type=text] {
 footer {
     color: #fff;
     background: #530F32;
-    padding: 60px;
+    padding: 60px 0;
 }
 footer .btn[class*=btn-] {
     background: transparent;
@@ -133,14 +144,15 @@ footer .list-unstyled li {
     padding: 0;
 }
 @media(max-width:767px) {
-    .what-we-do section: first-of-type.row img {
-        width: 35px;
-        height: 35px;
-        float: left;
-        margin-right: 10px;
+    .navbar-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 20;
     }
-    .what-we-do section:first-of-type.row h2, .what-we-do section:first-of-type.row p {
-        text-align: left;
+    .jumbotron {
+        top: 0;
     }
     .text-center-xs {
         text-align: center;
@@ -153,18 +165,50 @@ footer .list-unstyled li {
         font-size: 25px;
         margin-top: 0;
     }
+    .what-we-do section:first-of-type.row img {
+        width: 35px;
+        height: 35px;
+        float: left;
+        margin-right: 10px;
+    }
+    .what-we-do section:first-of-type.row h2, .what-we-do section:first-of-type.row p {
+        text-align: left;
+    }
+    .table > tbody > tr > td:nth-of-type(2) > blockquote, .table > tbody > tr > td:nth-of-type(2) > strong {
+        width: 400px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        display: block;
+        /* truncate */
+    }
+    .sponsors {
+        padding: 20px 0;
+    }
+    .sponsors img:nth-of-type(-n+2) {
+        margin-bottom: 20px;
+    }
 }
 @media(min-width:768px) {
+    .img-circle-md {
+        border-radius: 50%;
+    }
     .jumbotron {
-        padding-top: 150px;
+        padding: 100px 0 40px 0;
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-small.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-small.jpg');
     }
     .jumbotron h1 {
-        font-size: 50px;
+        font-size: 29px;
+        margin-top: 0;
+        padding-top: 20px;
     }
-    .jumbotron::after {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-small.jpg') no-repeat center center;
+    .jumbotron p {
+        font-size: 15px;
     }
-    .what-we-do section.row {
+    .jumbotron::after {} .what-we-do section.row {
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -173,22 +217,40 @@ footer .list-unstyled li {
         margin-top: 40px;
     }
 }
-
 @media(min-width:992px) {
-    .jumbotron::after {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-medium.jpg') no-repeat center center;
+    .jumbotron {
+        padding: 100px 0 40px 0;
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-medium.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-medium.jpg');
     }
-    .what-we-do section: not(: first-of-type).row .lead {
+    .jumbotron p {
+        font-size: 19px;
+    }
+    .jumbotron h1 {
+        font-size: 34px;
+        margin-top: 0;
+    }
+    .what-we-do section:not(:first-of-type).row .lead {
         font-size: 21px;
     }
+    .jumbotron::after {}
 }
 @media(min-width:1200px) {
-    .jumbotron::after {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-large.jpg') no-repeat center center;
-    }
     .what-we-do section.row {
         margin-top: 80px;
         margin-bottom: 80px;
+    }
+    .jumbotron::after {} .jumbotron {
+        padding: 140px 0 80px 0;
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-large.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/jumbo-large.jpg');
+    }
+    .jumbotron h1 {
+        font-size: 38px;
+        margin-top: 20px;
+    }
+    .jumbotron p {
+        font-size: 24px;
     }
     .what-we-do section:not(:first-of-type).row h2 {
         font-size: 40px;

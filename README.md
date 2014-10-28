@@ -1,7 +1,7 @@
 ##Requirements
 
-- npm
 - Node
+- npm
 - Bower
 - Grunt
 
@@ -10,12 +10,12 @@
 Na het klonen van het project, voer de volgende lijnen in je terminal uit:
 ```$ npm install ``` (sudo kan nodig zijn)
 
+*npm install wil niet altijd na 1 keer werken. probeer het opnieuw als er fouten optreden.*
+
 Nadat alles is geinstalleerd voer het volgende uit:
 ``` $ bower install ``` & ```$ grunt serve```
 
-http://localhost:9000 will start automaticly in your browser.
-
-
+http://localhost:9000 start automatisch in de browser.
 
 ##Blok 2
 
